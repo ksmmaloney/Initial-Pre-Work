@@ -1,0 +1,14 @@
+/* */ Now getting into the details about why it's called Cascading Style Sheets and how one style gets applied over another. I learned that the class takes precedence over the body styling in this challenge  because the class is more "specific" to the text, and it's placed closer to the text.
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
