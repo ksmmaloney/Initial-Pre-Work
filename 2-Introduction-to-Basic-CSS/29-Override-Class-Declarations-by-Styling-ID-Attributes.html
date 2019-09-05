@@ -1,0 +1,20 @@
+/*  This lesson tells us "browsers read CSS from top to bottom...the browser will use whichever CSS declaration came last." However, an "id" attribute will override a class attribute, no matter where the id appears in the style block. The id could be listed at the top, and it would still override all the class attributes applied to the same element. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+
+  #orange-text {
+    color: orange;
+  }
+</style>
+<h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>
