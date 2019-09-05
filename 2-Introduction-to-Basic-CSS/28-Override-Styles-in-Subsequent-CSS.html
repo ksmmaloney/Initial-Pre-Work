@@ -1,0 +1,17 @@
+/* I learned that one class can override another, depending on where the class is listed in the style block. The class that is listed furthest down in the order will take precedence. So, it does matter where you place classes in the style block.*/
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
