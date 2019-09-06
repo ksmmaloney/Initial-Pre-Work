@@ -1,0 +1,27 @@
+/* I learned about several options for how you can arrange the items vertically and horizontally in a flex container. You use "justify-content" in the parent element along with a choice of settings: flex-start, flex-end, space-between, and space-around. In a row setting, the items are placed side by side. In a column setting, the items are placed on top of each other. You can reference a main axis, which is a horizontal line through the items in a row, and a vertical line for a column. */
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
