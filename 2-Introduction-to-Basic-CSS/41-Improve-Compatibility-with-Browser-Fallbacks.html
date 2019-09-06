@@ -1,0 +1,14 @@
+/* A browser will ignore properties it can't recognize or support. (It's useful to learn that Internet Explorer doesn't support CSS variables.) In order to avoid having the browser revert to a default value, you should set up the CSS so the browser will find a secondary property value that you've chosen. Insert a more widely supported value right before your declaration. */
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
