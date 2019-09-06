@@ -1,0 +1,26 @@
+/* In addition to making rows, the flex-direction property can also stack the children of an element on top of each other to make a column. "Flex-direction: column" gets added to the #box-container parent element.*/
+
+<style>
+  #box-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
