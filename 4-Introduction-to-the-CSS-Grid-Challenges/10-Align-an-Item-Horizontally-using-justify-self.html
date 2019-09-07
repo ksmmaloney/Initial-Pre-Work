@@ -1,0 +1,39 @@
+/* The spaces that are formed in between the horizontal and vertical lines of a grid are called cells. The contents of each grid item sit inside the cells. By default, the contents will fill the entire width of a cell. If you want to change where the contents sit horizontally, you can use the "justify-self" property and shift the contents left, right, or to the center. The values to choose from are: 
+start (aligns left)
+center (aligns center)
+end (aligns right)   */
+
+<style>
+  .item1{background: LightSkyBlue;}
+
+  .item2 {
+    background: LightSalmon;
+    /* add your code below this line */
+    justify-self: center;
+
+    /* add your code above this line */
+  }
+
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+  .item5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
