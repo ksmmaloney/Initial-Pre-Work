@@ -1,0 +1,37 @@
+/* There's a way to automate the process of building a grid template. Instead of entering a value for each row or columnn, you can use the "repeat" function to state how many times you want a row or column repeated, and thus create a whole bunch at once.
+
+Example: "grid-template-rows: repeat(100, 50px);" would create a grid with 100 rows, each row 50px tall.
+
+The first value in the parenthesis right after the word "repeat" represents how many times you want something repeated. Then comes a comma. Then comes the values of the column's width. */
+
+
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+  .item5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* change the code below this line */
+
+    grid-template-columns: repeat (3, 1fr);
+
+    /* change the code above this line */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>
