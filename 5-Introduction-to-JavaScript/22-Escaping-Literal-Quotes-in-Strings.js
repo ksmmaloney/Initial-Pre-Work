@@ -1,0 +1,3 @@
+//  Because strings use quote marks, there's a way to configure a string in a case where you want to insert an actual quote that also requires quote marks. To avoid confusion, you use a backslash ( \ ) in front of your quote. You place another \ at the end, before the closing quote mark of your "quote." This allows you to "escape" a quote. It avoids JavaScript from thinking that your inserted quote is the end of the string. The result of the challenge is I am a "double quoted" string inside "double quotes".
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
