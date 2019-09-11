@@ -1,14 +1,17 @@
-// You can link together "if" statements with "else if" statements if you have more than two conditions.
+/*  THE FOLLOWING IS WHAT SHOULD HAVE BEEN THE TEXT FOR LESSON 70
 
+When using "if, else if" statements, the order is important. If the order is wrong, you can end up with incorrect outputs. The fuction gets executed from top to bottom. Pay attention to the statement that comes first.
+*/
 
-function testElseIf(val) {
-  if (val > 10) {
-    return "Greater than 10";
-  } else if (val < 5) {
-    return "Smaller than 5";
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
   } else {
-    return "Between 5 and 10";
+    return "Greater than or equal to 10";
   }
 }
+
 // Change this value to test
-console.log(testElseIf(10));
+console.log(orderMyLogic(11));
