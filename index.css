@@ -9,28 +9,28 @@ h1 {
 	font-size: 110px;
 	background-color: #f2f2f2;
 	text-align: center;
-	margin: 50px 400px 20px;
+	margin: 50px 25% 20px;
 }
 
 h2 {
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 1.6em;
 	text-align: center;
 }
 
 .portrait {
 	float: left;
 	width: 25%;
-	margin: 70px 100px 100px 150px;
+	margin: 0 10% 5%;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);
 	border-radius: 20px;
 }
 
 .summary {
-	font-size: 25px;
-	margin: 200px 100px;
-	padding-left: 40%;
-	padding-right: 8%;
+	font-size: 30px;
+	margin: 6% 15% 10% 10%;
+	padding-top: 6%;
+	text-align: justify;
 }
 
 /*The styling for this hr came from css tricks: https://css-tricks.com/examples/hrs/ */
@@ -38,15 +38,14 @@ hr {
 	width: 80%;
 	border: 0;
 	height: 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .middle-section {
 	display: flex;
 	justify-content: space-around;
-	font-size: 20px;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .notable-container {
@@ -54,36 +53,57 @@ hr {
 	flex-direction: column;
 	align-items: center;
 	width: 40%;
+	margin-left: 4%;
+}
+
+.notable {
+	font-size: 23px;
 }
 
 .photo-container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	width: 40%;
+	margin-top: 3%;
+	align-items: center;
 }
 
 .uniform {
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);
 	border-radius: 20px;
+	width: 350px;
 }
 
 .change-quote {
 	width: 70%;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 h3,
 h4 {
-	font-size: 30px;
+	font-size: 35px;
 	text-align: center;
+}
+
+span {
+	font-weight: bold;
 }
 
 .list-of-dates {
 	list-style-type: none;
-	font-size: 20px;
-	margin: 10px 250px 150px;
+	font-size: 23px;
+	margin: 10px 250px 80px;
 }
 
 li {
 	margin-bottom: 25px;
+}
+
+a:visited {
+	color: purple;
+}
+
+footer {
+	text-align: center;
 }
